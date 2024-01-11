@@ -174,6 +174,13 @@ img {
 
 #section .about .imagebox > li > img {
   margin: 30px 0;
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: all 0.5s;
+}
+#section .about .imagebox > li > img:hover {
+  opacity: 0.7;
+  transform: scale(0.99, 0.99);
 }
 
 #section .about .imagebox > li > p {
