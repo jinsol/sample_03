@@ -1,0 +1,138 @@
+/* index.css */
+
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.row {
+  width: 1220px;
+  margin: 0 auto;
+  height: inherit;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* ============================================================ */
+
+#header {
+  background-color: #fff;
+  z-index: 99;
+  position: relative;
+}
+
+#header > .row > h1 {
+  float: left;
+  padding: 10px 0;
+}
+
+#header > .row > h1 > a {
+  display: block;
+}
+
+#header > .row > #nav {
+  float: right;
+}
+
+#header > .row > #nav > ul.depth1 > li {
+  float: left;
+  position: relative;
+  text-align: center;
+  margin-left: 12px;
+}
+
+#header > .row > #nav > ul.depth1 > li > a {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 30px 22px;
+  display: inline-block;
+  color: #333;
+}
+
+#header > .row > #nav > ul.depth1 > li:hover > ul.depth2 {
+  display: block;
+}
+
+#header > .row > #nav > ul.depth1 > li > ul.depth2 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+#header > .row > #nav > ul.depth1 > li > ul.depth2 > li > a {
+  display: block;
+  padding: 12px 0 12px 22px;
+
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(132, 132, 132, 0.15);
+
+  background-color: #fff;
+  color: #333;
+
+  transition: all 0.3s;
+}
+
+#header > .row > #nav > ul.depth1 > li > ul.depth2 > li > a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ============================================================ */
+
+#section > .homemain {
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  background-color: gray;
+}
+
+#section > .homemain .slide {
+  position: relative;
+}
+
+#section > .homemain .textbox {
+  position: absolute;
+  display: inline-block;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#section > .homemain .textbox > h2 {
+  font-size: 35px;
+  padding: 20px 0;
+}
+#section > .homemain .textbox > p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ============================================================ */
