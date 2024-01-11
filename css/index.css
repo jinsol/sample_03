@@ -154,6 +154,7 @@ img {
 
 #section .about .textbox > p {
   font-size: 15px;
+  margin: 20px 0 0;
 }
 
 #section .about .imagebox {
@@ -168,8 +169,11 @@ img {
 }
 
 #section .about .imagebox > li > h3 {
-  margin-top: 10px;
   font-weight: 400;
+}
+
+#section .about .imagebox > li > img {
+  margin: 30px 0;
 }
 
 #section .about .imagebox > li > p {
