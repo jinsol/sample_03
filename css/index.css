@@ -26,7 +26,7 @@ a {
 }
 
 .row {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
   height: inherit;
 }
@@ -107,7 +107,7 @@ img {
 
 #section > .homemain {
   width: 100%;
-  height: 750px;
+  max-height: 750px;
   overflow: hidden;
   background-color: gray;
 }
@@ -133,6 +133,55 @@ img {
 #section > .homemain .textbox > p {
   font-size: 18px;
   font-weight: 600;
+}
+
+/* ============================================================ */
+
+#section .about {
+  padding: 100px 0;
+  text-align: center;
+  color: #333;
+}
+
+#section .about .textbox {
+  padding-bottom: 40px;
+}
+
+#section .about .textbox > h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#section .about .textbox > p {
+  font-size: 15px;
+}
+
+#section .about .imagebox {
+  display: block;
+  width: 100%;
+}
+
+#section .about .imagebox > li {
+  float: left;
+  width: 33.33%;
+  padding: 0 16px;
+}
+
+#section .about .imagebox > li > h3 {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+#section .about .imagebox > li > p {
+  margin: 20px 0 30px;
+  font-size: 14px;
+}
+
+#section .about .imagebox > li > a {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* ============================================================ */
