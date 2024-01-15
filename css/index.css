@@ -175,13 +175,14 @@ img {
   font-weight: 600;
 }
 
-#section .about .imagebox > li > img {
+#section .about .imagebox > li > a > img {
   margin: 30px 0;
   opacity: 1;
   transform: scale(1);
   transition: all 0.5s;
 }
-#section .about .imagebox > li > img:hover {
+
+#section .about .imagebox > li > a:hover > img {
   opacity: 0.7;
   transform: scale(0.99);
 }
