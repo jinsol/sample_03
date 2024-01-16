@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS (시작) -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- CSS (끝) -->
+    <!-- JS (시작) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- JS (끝) -->
   </head>
 
   <body>
@@ -65,15 +75,55 @@
       <div class="homemain">
         <div class="slideOuter">
           <div class="slideInner">
-            <div class="slide">
-              <div class="imagebox">
-                <img src="./image/main01.jpg" alt="메인슬라이드이미지1" />
-              </div>
+            <div class="slide slide01">
+              <!-- <div class="imagebox">
+                <img src="./image/main01.jpg" alt="메인슬라이드1">
+              </div> -->
               <div class="textbox">
-                <h2>감각적인 디자인 확실한 반응성</h2>
-                <p> 선샤인은 모바일 환경을 고려한<br />컨텐츠 최적화 홈페이지 전문회사입니다. </p>
+                <h2>(1) 감각적인 디자인 확실한 반응성</h2>
+                <p>
+                  <span>선샤인은 모바일 환경을 고려한</span>
+                  <span>컨텐츠 최적화 홈페이지 전문회사입니다.</span>
+                </p>
               </div>
             </div>
+            <div class="slide slide02">
+              <!-- <div class="imagebox">
+                <img src="./image/main02.jpg" alt="메인슬라이드2">
+              </div> -->
+              <div class="textbox">
+                <h2>(2) 상상 그 이상의 디자인을 선사하다</h2>
+                <p>
+                  <span>선샤인은 최고의 크리에이티브와 차별화된 전문 디자인 경험을 바탕으로</span>
+                  <span>영역의 한계를 넘어 항상 최고의 솔루션을 제공합니다.</span>
+                </p>
+              </div>
+            </div>
+            <div class="slide slide03">
+              <!-- <div class="imagebox">
+                <img src="./image/main03.jpg" alt="메인슬라이드3">
+              </div> -->
+              <div class="textbox">
+                <h2>(3) 창조적인 혁신 글로벌 기업 </h2>
+                <p><span>지속적인 최고의 제품 개발로</span>
+                  <span>글로벌 기업에서 경쟁력을 확보하고 있습니다.</span>
+                </p>
+              </div>
+            </div>
+            <div class="slide slide04">
+              <!-- <div class="imagebox">
+                <img src="./image/main04.jpg" alt="메인슬라이드4">
+              </div> -->
+              <div class="textbox">
+                <h2>(4) 고객을 위한 최고의 서비스</h2>
+                <p><span>선샤인은 최고의 서비스와 최고의 만족도를</span>
+                  <span>제공해 드리기 위해 노력합니다.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="plapau">
+            <i class="fa-solid fa-pause"></i>
           </div>
         </div>
       </div>
@@ -252,6 +302,30 @@
         </div>
       </div>
     </div>
+    <script>
+      $('.slideInner').slick({
+        autoplay: true, // 슬라이더 자동재생
+        dots: true, // 번호버튼 표시여부
+        autoplayspeed: 1000, // 자동재생 지연시간 (ms 단위생략)
+        // speed: 200, 슬라이드 진출입 속도, 기본 600
+        // arrows: false, // 이전, 다음버튼 표시 여부
+        Infinite: true,
+        arrow: true,
+        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: inline-block;"><i class="fa-solid fa-chevron-left"></i></button>',
+        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: inline-block;"><i class="fa-solid fa-chevron-right"></i></button>',
+      });
+
+      $(".slideOuter .plapau i").on("click", function () {
+        if ($(this).hasClass("fa-pause")) {
+          $(".slideInner").slick("slickPause");
+          $(this).removeClass("fa-pause").addClass("fa-play");
+        } else {
+          $(".slideInner").slick("slickPlay");
+          $(this).removeClass("fa-play").addClass("fa-pause");
+        }
+      });
+
+    </script>
   </body>
 
 </html>
