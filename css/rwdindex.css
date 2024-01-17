@@ -7,15 +7,61 @@
 }
 
 @media screen and (max-width: 990px) {
+  #header .row {
+    padding: 0;
+  }
+
+  #header .row h1 {
+    padding: 10px 0 10px 20px;
+  }
+
   #header .menuopen {
     display: block;
     float: right;
     line-height: 85px;
     font-size: 26px;
     color: gray;
+    margin-right: 20px;
   }
 
   #header .row #nav {
-    display: none;
+    display: block;
+    width: 100%;
+  }
+
+  #header .row #nav ul.depth1 > li {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  #header .row #nav ul.depth1 > li > a {
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(132, 132, 132, 0.15);
+
+    /* 메뉴가 열렸을 때 */
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  #header .row #nav ul.depth1 > li > a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  #header .row #nav ul.depth1 > li ul.depth2 {
+    display: block;
+    position: static;
+  }
+
+  #header .row #nav ul.depth1 > li ul.depth2 li > a {
+    padding: 12px 0 12px 34px;
+  }
+
+  #header .row #nav ul.depth1 > li ul.depth2 li > a:hover {
+    border-bottom: 1px solid white;
   }
 }
