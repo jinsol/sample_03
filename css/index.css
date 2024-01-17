@@ -35,6 +35,12 @@ img {
   vertical-align: middle;
 }
 
+.blind {
+  position: absolute;
+  left: -9999px;
+  overflow: hidden;
+}
+
 /* ============================================================ */
 
 #header {
@@ -44,6 +50,10 @@ img {
 #header .row h1 {
   float: left;
   padding: 10px 0;
+}
+
+#header .menuopen {
+  display: none;
 }
 
 #header .row #nav {
