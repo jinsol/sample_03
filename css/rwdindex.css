@@ -194,7 +194,8 @@
   }
 
   #section .best {
-    background-position: right;
+    background: url(../image/banner04.jpg) right center / cover;
+    /* background-position: right; */
   }
 
   /* ================================================= */
@@ -214,6 +215,7 @@
 
   #section .contact .query {
     padding: 40px;
+    height: auto;
   }
 
   #section .contact .btn a {
@@ -243,5 +245,13 @@
   #footer .btmmenu .sns a {
     margin-left: 0;
     margin-right: 10px;
+  }
+
+  #footer .btmmenu .addr p span {
+    display: block;
+  }
+
+  #footer .btmmenu .addr p span.slash {
+    display: none;
   }
 }
