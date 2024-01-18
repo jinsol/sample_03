@@ -86,8 +86,28 @@
 
   /* ================================================= */
 
+  /* 공통속성 */
+
+  #section .about .textbox,
+  #section .business p.text,
+  #section .best p {
+    word-break: keep-all;
+  }
+
+  #section .about .textbox span,
+  #section .business p.text span,
+  #section .best p span {
+    display: inline;
+  }
+
+  /* ================================================= */
+
   #section .about .imagebox li {
     width: 100%;
+  }
+
+  #section .about .imagebox li p {
+    word-break: keep-all;
   }
 
   #section .about .imagebox li span {
@@ -97,11 +117,11 @@
   /* ================================================= */
 
   #section .homemain .textbox h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   #section .homemain .slide {
-    height: 50vw;
+    height: 80vw;
   }
 
   #section .homemain .textbox {
@@ -110,6 +130,11 @@
   }
 
   #section .homemain .textbox p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  #section .creative .text h2 #section .homemain .textbox p {
     font-size: 16px;
   }
 
@@ -133,12 +158,17 @@
     padding: 20px 40px;
   }
 
+  #section .creative .text h2 {
+    font-size: 32px;
+  }
+
   #section .creative .text p {
     padding-right: 0;
   }
 
   #section .creative .text p strong {
     margin: 16px 0;
+    font-size: 16px;
   }
 
   /* ================================================= */
