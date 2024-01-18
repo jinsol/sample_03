@@ -12,7 +12,7 @@
   }
 
   #header .row h1 {
-    padding: 10px 0 10px 20px;
+    padding: 10px 0 10px 40px;
   }
 
   #header .menuopen {
@@ -21,7 +21,7 @@
     line-height: 85px;
     font-size: 26px;
     color: gray;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   #header .row #nav {
@@ -36,12 +36,15 @@
   }
 
   #header .row #nav ul.depth1 > li > a {
+    padding: 0 40px;
     height: 48px;
     line-height: 48px;
     font-size: 14px;
     border-bottom: 1px solid rgba(132, 132, 132, 0.15);
+  }
 
-    /* 메뉴가 열렸을 때 */
+  #header .row #nav ul.depth1 > li:hover > a {
+    /* 메뉴가 열렸을 때 동일한 속성 적용 필요 */
     background-color: black;
     color: white;
     border-bottom: 1px solid white;
@@ -52,16 +55,159 @@
     color: white;
   }
 
-  #header .row #nav ul.depth1 > li ul.depth2 {
+  #header .row #nav ul.depth1 > li > a::after {
+    color: white;
     display: block;
+    position: absolute;
+    right: 40px;
+    top: 0;
+
+    font-family: FontAwesome;
+    font-size: 11px;
+
+    content: "\f107";
+  }
+
+  #header .row #nav ul.depth1 > li:hover ul.depth2 {
+    display: block;
+  }
+
+  #header .row #nav ul.depth1 > li ul.depth2 {
     position: static;
   }
 
   #header .row #nav ul.depth1 > li ul.depth2 li > a {
-    padding: 12px 0 12px 34px;
+    padding: 12px 0 12px 54px;
   }
 
   #header .row #nav ul.depth1 > li ul.depth2 li > a:hover {
     border-bottom: 1px solid white;
+  }
+
+  /* ================================================= */
+
+  #section .about .imagebox li {
+    width: 100%;
+  }
+
+  #section .about .imagebox li span {
+    display: inline;
+  }
+
+  /* ================================================= */
+
+  #section .homemain .textbox h2 {
+    font-size: 24px;
+  }
+
+  #section .homemain .slide {
+    height: 50vw;
+  }
+
+  #section .homemain .textbox {
+    word-break: keep-all;
+    width: 60%;
+  }
+
+  #section .homemain .textbox p {
+    font-size: 16px;
+  }
+
+  #section .homemain .textbox p span {
+    display: inline;
+  }
+
+  /* ================================================= */
+
+  #section .creative {
+    padding: 60px 0;
+  }
+
+  #section .creative .videoBox {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  #section .creative .text {
+    width: 100%;
+    padding: 20px 40px;
+  }
+
+  #section .creative .text p {
+    padding-right: 0;
+  }
+
+  #section .creative .text p strong {
+    margin: 16px 0;
+  }
+
+  /* ================================================= */
+
+  #section .business {
+    padding: 60px 0;
+  }
+
+  #section .business p.text {
+    margin: 20px 0 40px;
+  }
+
+  #section .business ul li {
+    width: 50%;
+  }
+
+  #section .business ul li img {
+    width: 100%;
+  }
+
+  #section .best {
+    background-position: right;
+  }
+
+  /* ================================================= */
+
+  #section .contact {
+    padding-bottom: 40px;
+  }
+
+  #section .contact .map,
+  #section .contact .query {
+    width: 100%;
+  }
+
+  #section .contact .greeting {
+    padding: 20px 0 0;
+  }
+
+  #section .contact .query {
+    padding: 40px;
+  }
+
+  #section .contact .btn a {
+    font-size: 13px;
+  }
+
+  #footer {
+    padding: 40px;
+  }
+
+  #footer .btmlogo {
+    padding: 0;
+  }
+  #footer .btmmenu {
+    width: 100%;
+  }
+
+  #footer .btmmenu .companyinfo ul {
+    padding: 15px 0;
+  }
+  #footer .btmmenu .sns {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  #footer .btmmenu .sns a {
+    margin-left: 0;
+    margin-right: 10px;
   }
 }
