@@ -9,6 +9,7 @@
 @media screen and (max-width: 990px) {
   #header .row {
     padding: 0;
+    flex-wrap: wrap;
   }
 
   #header .row h1 {
@@ -16,9 +17,9 @@
   }
 
   #header .menuopen {
-    display: block;
-    float: right;
-    line-height: 85px;
+    display: flex;
+    align-items: center;
+
     font-size: 26px;
     color: gray;
     margin-right: 40px;
@@ -29,18 +30,25 @@
     width: 100%;
   }
 
+  #header .row #nav ul.depth1 {
+    display: block;
+  }
+
   #header .row #nav ul.depth1 > li {
     width: 100%;
     text-align: left;
     margin-left: 0;
+    display: block;
   }
 
   #header .row #nav ul.depth1 > li > a {
-    padding: 0 40px;
-    height: 48px;
-    line-height: 48px;
+    padding: 14px 40px;
     font-size: 14px;
     border-bottom: 1px solid rgba(132, 132, 132, 0.15);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   #header .row #nav ul.depth1 > li:hover > a {
@@ -57,10 +65,6 @@
 
   #header .row #nav ul.depth1 > li > a::after {
     color: gray;
-    display: block;
-    position: absolute;
-    right: 40px;
-    top: 0;
 
     font-family: FontAwesome;
     font-size: 11px;
@@ -106,8 +110,9 @@
 
   /* ================================================= */
 
-  #section .about .imagebox li {
-    width: 100%;
+  #section .about .imagebox,
+  #section .creative {
+    display: block;
   }
 
   #section .about .imagebox li p {
@@ -186,7 +191,7 @@
   }
 
   #section .business ul li {
-    width: 50%;
+    flex: 1 1 50%;
   }
 
   #section .business ul li img {
@@ -195,7 +200,6 @@
 
   #section .best {
     background: url(../image/banner04.jpg) right center / cover;
-    /* background-position: right; */
   }
 
   /* ================================================= */
@@ -206,7 +210,7 @@
 
   #section .contact .map,
   #section .contact .query {
-    width: 100%;
+    flex: 1 1 100%;
   }
 
   #section .contact .greeting {
@@ -222,22 +226,28 @@
     font-size: 13px;
   }
 
+  /* ================================================= */
+
   #footer {
     padding: 40px;
   }
 
+  #footer .row {
+    display: block;
+  }
+
   #footer .btmlogo {
+    margin-right: 0;
     padding: 0;
   }
   #footer .btmmenu {
-    width: 100%;
+    display: block;
   }
 
   #footer .btmmenu .companyinfo ul {
     padding: 15px 0;
   }
   #footer .btmmenu .sns {
-    width: 100%;
     margin-left: 0;
     padding-top: 20px;
   }

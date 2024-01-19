@@ -47,9 +47,15 @@ img {
   background-color: #fff;
 }
 
+#header .row {
+  display: flex;
+  justify-content: space-between;
+}
+
 #header .row h1 {
-  float: left;
-  padding: 10px 0;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
 }
 
 #header .menuopen {
@@ -57,14 +63,19 @@ img {
 }
 
 #header .row #nav {
-  float: right;
+  display: flex;
+}
+
+#header .row #nav ul.depth1 {
+  display: flex;
 }
 
 #header .row #nav ul.depth1 > li {
-  float: left;
   position: relative;
   text-align: center;
   margin-left: 12px;
+  display: flex;
+  align-items: center;
 }
 
 #header .row #nav ul.depth1 > li > a {
@@ -72,8 +83,6 @@ img {
   font-weight: bold;
 
   padding: 0 22px;
-  height: 85px;
-  line-height: 85px;
 
   display: block;
   color: #333;
@@ -279,10 +288,14 @@ img {
   width: 100%;
 }
 
+#section .about .imagebox {
+  display: flex;
+  justify-content: space-between;
+}
+
 #section .about .imagebox li {
-  float: left;
-  width: 33.33%;
   padding: 0 16px;
+  flex: 1;
 }
 
 #section .about .imagebox li h3 {
@@ -321,20 +334,20 @@ img {
 /* ============================================================ */
 
 #section .creative {
-  overflow: hidden;
   padding: 100px 0;
   background: #fafafa;
+  display: flex;
+}
+
+#section .creative > div {
+  flex: 1;
 }
 #section .creative .videoBox {
-  float: left;
-  width: 50%;
 }
 #section .creative .videoBox video {
   width: 100%;
 }
 #section .creative .text {
-  float: left;
-  width: 50%;
   padding: 20px 100px;
 }
 
@@ -386,12 +399,13 @@ img {
 }
 
 #section .business ul {
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #section .business ul li {
-  width: 20%;
-  float: left;
+  flex: 1 1 20%;
   padding: 10px;
 }
 
@@ -402,14 +416,18 @@ img {
 }
 
 #section .business ul li a .overbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
-  padding-top: 60%;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -460,13 +478,14 @@ img {
 }
 
 #section .contact .row {
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #section .contact .map,
 #section .contact .query {
-  float: left;
-  width: 50%;
+  flex: 1;
 }
 
 #section .contact .query {
@@ -519,22 +538,19 @@ img {
 }
 
 #footer .row {
-  overflow: hidden;
+  display: flex;
 }
 
 #footer .btmlogo {
-  float: left;
   padding: 40px 0;
+  margin-right: 80px;
 }
 
 #footer .btmmenu {
-  float: right;
-  overflow: hidden;
-  width: 75%;
-}
-
-#footer .btmmenu .companyinfo {
-  float: left;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
 }
 
 #footer .btmmenu .companyinfo ul {
@@ -562,9 +578,6 @@ img {
 }
 
 #footer .btmmenu .sns {
-  float: right;
-  margin-left: 50px;
-  padding-top: 80px;
 }
 
 #footer .btmmenu .sns a {
